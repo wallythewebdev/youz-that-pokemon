@@ -33,3 +33,12 @@ node app.js
 
 - [ ] find way to load only the selected number so that api call does not need to be made for full amount
 not sure if this is possible but will check documentation
+- [x] added section for error handling
+- [x] moved function to utils file for cleaner code
+
+'''
+pokedex(limit of pokemon to seach through, (call back for error and data))
+'''
+
+**Dev update**
+
