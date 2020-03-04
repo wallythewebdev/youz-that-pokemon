@@ -1,6 +1,9 @@
 const request = require('request')
 const chalk = require('chalk')
 
+
+
+// main function for the return of data to the user
 const pokedex = function(limit, callback){
     const url = `https://pokeapi.co/api/v2/pokemon/?offset=${limit}&limit=${limit}`;
 
@@ -26,4 +29,8 @@ const pokedex = function(limit, callback){
 
 }
 
-module.exports = pokedex
+
+
+module.exports = {
+    pokedex: pokedex
+}
