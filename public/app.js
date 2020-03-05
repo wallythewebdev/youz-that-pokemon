@@ -25,7 +25,7 @@ form.addEventListener('submit', (e)=>{
     // sign value user chose << inside event listener to listen to the sign on the event being fired
     sign = document.querySelector('select').value;
 
-    fetch(`http://localhost:3000/sign?sign=${sign}`).then((responce)=>{
+    fetch(`/sign?sign=${sign}`).then((responce)=>{
         responce.json().then((data)=>{
             poke_main_info.innerText =`${data.name}`
             // data url - has the pokemon info on it including image

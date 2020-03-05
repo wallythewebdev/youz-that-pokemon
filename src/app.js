@@ -3,8 +3,9 @@
 
 
 // load express && handlebars HBS
-const express = require('express')
-const hbs = require('hbs')
+const express = require('express');
+const port = process.env.PORT || 3000;
+const hbs = require('hbs');
 
 // load in the requied modules
 
@@ -58,7 +59,10 @@ app.get('', (req, res) => {
     if(!req.query.sign){
         return res.render('index', {
             title: 'You-Z<br>that<br>pokemon!',
-            error: 'You need to select your star sign? otherwise your pokemon will just hide from you......'
+            error: 'You need to select your star sign? otherwise your pokemon will just hide from you......',
+            // footer
+            author: "Wally the web dev",
+            terms: 'This was developed using the PokeAPI'
         })
     }
     res.render('index', {
@@ -116,6 +120,6 @@ app.get('/sign', (req, res) => {
 
 
 
-app.listen(3000, ()=>{
-    console.log('run-3000')
+app.listen(port, ()=>{
+    console.log(`Server running on ${port}`)
 })
