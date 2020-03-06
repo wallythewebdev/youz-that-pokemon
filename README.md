@@ -1,6 +1,9 @@
 # youz-that-pokemon
 Let Node JS tell you which Pokemon you are
 
+**view app at**
+https://wtwd-youz-that-pokemon.herokuapp.com/
+
 **Idea**
 
 Started to make Http requests using node, got super excited (geeking out they call it) and wanted to use user input to return the pokemon that they should be based on there input like: 
@@ -16,12 +19,18 @@ date of birth (month) = if number is over 30, the devision of number
 
 **steps**
 
-1) git pull to your local device (**Currently this is only avalible for localHost:3000**)
+1) Either view the app deployed at https://wtwd-youz-that-pokemon.herokuapp.com/
+or git pull this respository to your local device and run it with the below instructions: 
 2) install node modules required
-3) run terminal 
+```
+npm install
+```
+3) aplication is auto run from the package json start script
+
+**DEV runs using nodemon as a global install**
 
 ```
-node src/app.js
+npm run dev
 ```
 
 4) in browser fire up **http://localhost:3000/**
@@ -47,8 +56,6 @@ node app.js
 
 **Optomise**
 
-- [ ] find way to load only the selected number so that api call does not need to be made for full amount
-not sure if this is possible but will check documentation
 - [x] added section for error handling
 - [x] moved function to utils file for cleaner code
 
@@ -63,3 +70,11 @@ pokemon that are of your star signs element sign, which is a little dull to be h
 Somthing to make it more personal would be a good call - 
 
 Also would like to look at adding in a facebook share button for exposure 
+
+05/03/2020
+
+Deployed the app to Heroku and altered the package JSON / src/app.js and public/app.js so that 
+the app with load on the port of the ENV server - this will either be Herokus git account or the 
+trusty local host: 3000 - 
+
+Issues have been seen from Apple users with the styling not displaying correcty and this will be addressed
