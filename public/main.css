@@ -12,9 +12,13 @@
 
   body {
     height: 100vh;
+    display: -webkit-box;
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
     background: orangered;
 
     box-sizing: border-box;
@@ -57,9 +61,13 @@
 }
 
 .pokemonContainer {
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
 }
 
 
@@ -73,8 +81,11 @@ select {
 }
 
 form {
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
     width: 80%;
 }
 
@@ -89,15 +100,23 @@ button {
 }
 
 .main-content {
+  display: -webkit-box;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
 }
 
 footer {
+  display: -webkit-box;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
   background: black;
   width: 100%;
 }
