@@ -59,9 +59,9 @@ app.get('', (req, res) => {
     if(!req.query.sign){
         return res.render('index', {
             title: 'You-Z<br>that<br>pokemon!',
-            error: 'You need to select your star sign? otherwise your pokemon will just hide from you......',
+            // error: 'You need to select your star sign? otherwise your pokemon will just hide from you......', << 
             // footer
-            author: "Wally the web dev",
+            author: "http://wallythewebdev.com/",
             terms: 'This was developed using the PokeAPI'
         })
     }

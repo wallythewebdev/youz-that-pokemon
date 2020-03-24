@@ -8,32 +8,40 @@
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
-        <div class="main-content">
-        {{>header}}
-        {{!-- <h1>{{pokemonLink}}</h1> --}}
-        <p>{{error}}</p>
+        <div class="site">
+            <div class="main-content">
+            {{>header}}
+            {{!-- <h1>{{pokemonLink}}</h1> --}}
+            <p>{{error}}</p>
 
-        <form>
-            <select>
-                <option value="Aries">Aries</option>
-                <option value="Taurus">Taurus</option>
-                <option value="Gemini">Gemini</option>
-                <option value="Cancer">Cancer</option>
-                <option value="Leo">Leo</option>
-                <option value="Virgo">Virgo</option>
-                <option value="Libra">Libra</option>
-            </select>
-            <button>Throw Pokeball!</button>
-        </form>
+            <form>
+                <select>
+                    <option value="Aquarius">Aquarius</option>
+                    <option value="Pisces">Pisces</option>
 
-        <div class="pokemonContainer">
-            <h1 id="pokemon_Main_Info"></h1>
-            <img id="pokemon_Main_Image" src="#">
-            <p id="pokemon_info"></p>
-        </div>
-        </div>
-        {{>footer}}
-       
+                    <option value="Aries">Aries</option>
+                    <option value="Taurus">Taurus</option>
+                    <option value="Gemini">Gemini</option>
+                    <option value="Cancer">Cancer</option>
+                    <option value="Leo">Leo</option>
+                    <option value="Virgo">Virgo</option>
+                    <option value="Libra">Libra</option>
+
+                    <option value="Scorpio">Scorpio</option>
+                    <option value="Sagittarius">Sagittarius</option>
+                    <option value="Capricorn">Capricorn</option>
+                </select>
+                <button>Throw Pokeball!</button>
+            </form>
+
+            <div class="pokemonContainer">
+                <h1 id="pokemon_Main_Info"></h1>
+                <img id="pokemon_Main_Image" src="assets/img/pokeBall.png">
+                <p id="pokemon_info"></p>
+            </div>
+            </div>
+            {{>footer}}
+       </div>
        <script src="app.js"></script>
     </body>
 </html>

@@ -4,7 +4,6 @@ const request = require('request')
 // return the URL for the pokemon
 
 const getUrl = (sing)=>{
-    debugger;
     let element
 
     switch(sing){
