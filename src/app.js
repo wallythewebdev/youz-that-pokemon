@@ -97,6 +97,13 @@ app.get('/sign', (req, res) => {
         }
         // return return second function to get pokemon image
             pokeImage(pokeObj.pokeUrl, pokeObj, (error, pokeDeets) => {
+
+                if (pokeDeets.sprites === null){
+                    // fix for issue 1 - if img sprite unavalible send back error 
+                    return res.send({
+                        error: 'Your Pokemon Was Hiding, try again!'
+                    })
+                }
                 res.send({
 
                     // user input ---

@@ -27,6 +27,13 @@ form.addEventListener('submit', (e)=>{
 
     fetch(`/sign?sign=${sign}`).then((responce)=>{
         responce.json().then((data)=>{
+            console.log(data)
+            if(data.error){
+                poke_main_info.innerText =``;
+                poke_image.src="assets/img/pokeBall.png"
+                pokemon_info.innerText=`${data.error}`
+                return
+            }
             poke_main_info.innerText =`${data.name}`
             // data url - has the pokemon info on it including image
             // either will be adding request here or in pokeType.js
